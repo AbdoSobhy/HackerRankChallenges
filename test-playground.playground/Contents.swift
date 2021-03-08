@@ -5,40 +5,26 @@
 // Swift 5.1
 // Use print("messages...") to debug your solution
 import Foundation
-//
-//func closestToZero(_ ts: [Double]) -> Double {
-//    guard !ts.isEmpty else {return 0}
-//    var array = ts
-//    array.append(0)
-//    let sortedArray = array.sorted()
-//    let zeroIndex = sortedArray.firstIndex(of: 0)!
-//    // mark
-//    guard sortedArray.count >= 3 else {return sortedArray.first ?? 0}
-//    let firstNumber = sortedArray[zeroIndex - 1]
-//    let secondNumber = sortedArray[zeroIndex + 1]
-//
-//    if firstNumber == -secondNumber{
-//        return firstNumber > secondNumber ?  firstNumber  :   secondNumber
-//    }
-//
-//    let resultArray = [firstNumber,secondNumber].sorted()
-//
-//    var lastResultNumber: [Double] = []
-//
-//    for result in resultArray {
-//        if result < 0 {
-//            lastResultNumber.append(result * -1)
-//        } else {
-//            lastResultNumber.append(result)
+
+//func calculateClosestTo0 (arr: [Double]) -> Double {
+//        guard !arr.isEmpty else {return 0}
+//    var closest = 0.0
+//    for i in 0..<arr.count {
+//        if (closest == 0) {
+//            print("position 1 ==> \(closest) = \(arr[i])")
+//            closest = arr[i]
+//        } else if (arr[i] > 0 && arr[i] <= closest) {
+//            print("position 2 ==> \(closest) = \(arr[i])")
+//            closest = arr[i]
+//        } else if (arr[i] < 0 && -arr[i] < abs(closest)) {
+//            print("position 3 ==> \(closest) = \(arr[i])")
+//            closest = arr[i]
 //        }
 //    }
-//
-//    let finalResult = lastResultNumber.sorted().first ?? 0
-//    if !resultArray.contains(finalResult){return finalResult * -1}
-//
-//
-//    return finalResult
+//    return closest
 //}
+//
+////
 //
 //func generateArray(of number: Int) -> [Double]{
 //    var array: [Double] = []
@@ -47,17 +33,15 @@ import Foundation
 //    }
 //    return array
 //}
-//let array = generateArray(of: 1)
-//
+//let array = generateArray(of: 5)
 //
 //let start = CFAbsoluteTimeGetCurrent()
 //// run your work
-//print(closestToZero(array))      // -1.7
-//
-//
+//print(calculateClosestTo0(arr: [1,2,3,0,6,99,0.5,-0.25]))
 //let diff = CFAbsoluteTimeGetCurrent() - start
 //print("Took \(diff) seconds")
-//
+
+
 //
 //
 //
@@ -315,4 +299,12 @@ import Foundation
 //
 //print(gradingStudents(grades: [73,67,38,33]))
 
-
+//func countApplesAndOranges(s: Int, t: Int, a: Int, b: Int, apples: [Int], oranges: [Int]) -> Void {
+//    let homeRange = s...t
+//    let applePoints = apples.map({$0 + a})
+//    let orangePoints = oranges.map({$0 + b})
+//    print(applePoints.filter({homeRange.contains($0)}).count)
+//    print(orangePoints.filter({homeRange.contains($0)}).count)
+//}
+//
+//countApplesAndOranges(s: 7, t: 10, a: 4, b: 12, apples: [2,3,-4], oranges: [3,-2,-4])
