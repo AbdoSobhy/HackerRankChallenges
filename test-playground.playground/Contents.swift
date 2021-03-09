@@ -374,8 +374,32 @@ import Foundation
 //            }
 //        }
 //    }
-//    
+//
 //    return result
 //}
 //
 //print(divisibleSumPairs(n: 6, k: 3, ar: [1, 3, 2, 6, 1, 2]))
+
+
+//func migratoryBirds(arr: [Int]) -> Int {
+//    var result = 0
+//    var mostValue = 0
+//    var dic = [Int: Int]()
+//    for id in arr {
+//        if dic[id] ?? 0 > 0{
+//            dic[id]! += 1
+//        } else {
+//            dic[id] = 1
+//        }
+//    }
+//    print(dic)
+//    for (key,value) in dic {
+//        if value > mostValue {
+//            mostValue = value
+//            result = key
+//        }
+//    }
+//    return result
+//}
+//
+//print(migratoryBirds(arr: [2,2,1,1,3]))
