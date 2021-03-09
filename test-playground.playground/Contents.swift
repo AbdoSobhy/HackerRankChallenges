@@ -327,3 +327,27 @@ import Foundation
 //}
 //
 //print(getTotalX(a: [2,6], b: [24,36]))
+
+//func breakingRecords(scores: [Int]) -> [Int] {
+//    var min = scores[0]
+//    var max = scores[0]
+//    var minC = 0
+//    var maxC = 0
+//    for i in 1..<scores.count{
+//        if scores[i] < min{
+//            min = scores[i]
+//            minC += 1
+//        }
+//        else if scores[i] > max{
+//            max = scores[i]
+//            maxC += 1
+//
+//        }
+//    }
+//
+//    return [maxC,minC]
+//
+//
+//}
+//
+//print(breakingRecords(scores: [10, 5, 20, 20, 4, 5, 2, 25, 1]))
