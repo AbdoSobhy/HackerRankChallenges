@@ -352,15 +352,30 @@ import Foundation
 //
 //print(breakingRecords(scores: [10, 5, 20, 20, 4, 5, 2, 25, 1]))
 
-func birthday(s: [Int], d: Int, m: Int) -> Int {
-    var possibilities = 0
-    for i in 0 ... s.count - m {
-        let miniSum = s[i ..< i + m].reduce(0, +)
-        if miniSum == d {
-            possibilities += 1
-        }
-    }
-    return possibilities
-}
+//func birthday(s: [Int], d: Int, m: Int) -> Int {
+//    var possibilities = 0
+//    for i in 0 ... s.count - m {
+//        let miniSum = s[i ..< i + m].reduce(0, +)
+//        if miniSum == d {
+//            possibilities += 1
+//        }
+//    }
+//    return possibilities
+//}
+//
+//print(birthday(s: [1, 2, 1, 3, 2], d: 3, m: 2))
 
-print(birthday(s: [1, 2, 1, 3, 2], d: 3, m: 2))
+//func divisibleSumPairs(n: Int, k: Int, ar: [Int]) -> Int {
+//    var result = 0
+//    for i in 0...n - 2 {
+//        for j in i + 1 ... n - 1 {
+//            if ((ar[i] + ar[j]) % k) == 0 {
+//                result += 1
+//            }
+//        }
+//    }
+//    
+//    return result
+//}
+//
+//print(divisibleSumPairs(n: 6, k: 3, ar: [1, 3, 2, 6, 1, 2]))
