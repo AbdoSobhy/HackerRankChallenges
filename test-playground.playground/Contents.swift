@@ -1,4 +1,9 @@
-
+//
+//  playground
+//
+//  Created by Abdelrahman Sobhy on 1/3/21.
+//  Copyright © 2021 Abdelrahman Sobhy. All rights reserved.
+//
 // Temperatures are always expressed with floating point numbers ranging from -273 to 5526.
 
 // Swift 5.1
@@ -308,3 +313,17 @@ import Foundation
 //}
 //
 //countApplesAndOranges(s: 7, t: 10, a: 4, b: 12, apples: [2,3,-4], oranges: [3,-2,-4])
+
+//func getTotalX(a: [Int], b: [Int]) -> Int {
+//    // Limit the number of items we need to check.
+//    guard let maxA = a.max(), let minB = b.min(), minB >= maxA else { return 0 }
+//    let items = Array(maxA...minB)
+//    return items.filter { (item) -> Bool in
+//        let modA = a.map { item % $0 }.reduce(0, +)
+//        let modB = b.map { $0 % item }.reduce(0, +)
+//        // filter the items that meet both requirements
+//        return (modA + modB) == 0
+//    }.count
+//}
+//
+//print(getTotalX(a: [2,6], b: [24,36]))
