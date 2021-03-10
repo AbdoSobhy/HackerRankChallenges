@@ -418,3 +418,13 @@ import Foundation
 //}
 //
 //print(dayOfProgrammer(year: 2021))
+
+//func bonAppetit(bill: [Int], k: Int, b: Int) -> Void {
+//    let actualPaidForAnna = (bill.reduce(0, {($0 + $1)}) - bill[k]) / 2
+//    if actualPaidForAnna == b {
+//        print("Bon Appetit")
+//    } else {
+//        print(b - actualPaidForAnna)
+//    }
+//}
+//bonAppetit(bill: [2,4,6], k: 2, b: 6)
