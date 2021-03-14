@@ -428,3 +428,18 @@ import Foundation
 //    }
 //}
 //bonAppetit(bill: [2,4,6], k: 2, b: 6)
+
+
+//func sockMerchant(n: Int, ar: [Int]) -> Int {
+//    return Dictionary(grouping: ar, by: {$0}).map({ $1.count / 2 }).reduce(0, +)
+//
+//}
+//
+//print(sockMerchant(n: 9, ar: [10, 20, 20, 10, 10, 30, 50, 10, 20]))
+
+//func pageCount(n: Int, p: Int) -> Int {
+//    let fromBegain = Int(p/2)
+//    let fromLast = (n/2) - fromBegain
+//    return min(fromBegain, fromLast)
+//}
+//print(pageCount(n: 6, p: 5))
