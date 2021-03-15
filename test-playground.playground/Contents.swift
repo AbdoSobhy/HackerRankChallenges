@@ -494,4 +494,34 @@ import Foundation
 //
 //catAndMouse(x: 1, y: 3, z: 2)
 
-
+//func formingMagicSquare(s: [[Int]]) -> Int {
+//
+//    var array: [Int] = []
+//    for row in s {
+//        for value in row {
+//            array.append(value)
+//        }
+//    }
+//    var costs: [Int] = [0,0,0,0,0,0,0,0]
+//    let options: [[Int]] = [
+//        [4,9,2,3,5,7,8,1,6],
+//        [4,3,8,9,5,1,2,7,6],
+//        [2,9,4,7,5,3,6,1,8],
+//        [2,7,6,9,5,1,4,3,8],
+//        [8,1,6,3,5,7,4,9,2],
+//        [8,3,4,1,5,9,6,7,2],
+//        [6,7,2,1,5,9,8,3,4],
+//        [6,1,8,7,5,3,2,9,4]
+//    ]
+//    print(array)
+//    for i in 0..<8 {
+//        for j  in 0...8 {
+//            costs[i] += abs(options[i][j] - array[j])
+//            print(costs)
+//
+//        }
+//
+//    }
+//    return costs.min()!
+//}
+//formingMagicSquare(s: [[5, 3, 4], [1, 5, 8], [6, 4, 2]])
