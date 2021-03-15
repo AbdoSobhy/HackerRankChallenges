@@ -473,8 +473,25 @@ import Foundation
 //            }
 //        }
 //    }
-//   
+//
 //    return bigSum
 //}
 //
 //print(getMoneySpent(keyboards: [40,50,60], drives: [5,8,12], b: 60))
+
+//
+//func catAndMouse(x: Int, y: Int, z: Int) -> String {
+//    var result = ""
+//    if abs(x - z) > abs(y - z){
+//        result = "Cat B"
+//    }else if abs(x - z) < abs(y - z){
+//        result = "Cat A"
+//    }else {
+//        result = "Mouse C"
+//    }
+//return result
+//}
+//
+//catAndMouse(x: 1, y: 3, z: 2)
+
+
