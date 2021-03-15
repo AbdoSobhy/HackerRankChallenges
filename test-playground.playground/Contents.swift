@@ -463,3 +463,18 @@ import Foundation
 //}
 //
 //print(countingValleys(steps: 8, path: "UDDDUDUU"))
+
+//func getMoneySpent(keyboards: [Int], drives: [Int], b: Int) -> Int {
+//    var bigSum = -1
+//    for i in 0..<keyboards.count{
+//        for j in 0..<drives.count{
+//            if keyboards[i] + drives[j] <= b && keyboards[i] + drives[j] > bigSum {
+//                bigSum = keyboards[i] + drives[j]
+//            }
+//        }
+//    }
+//   
+//    return bigSum
+//}
+//
+//print(getMoneySpent(keyboards: [40,50,60], drives: [5,8,12], b: 60))
