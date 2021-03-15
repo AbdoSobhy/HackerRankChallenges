@@ -443,3 +443,23 @@ import Foundation
 //    return min(fromBegain, fromLast)
 //}
 //print(pageCount(n: 6, p: 5))
+
+//func countingValleys(steps: Int, path: String) -> Int {
+//    var valleys = 0
+//    var level = 0
+//
+//    for step in path{
+//        if step == "D"{
+//            level -= 1
+//        }
+//        if step == "U" {
+//            if level == -1{
+//                valleys += 1
+//            }
+//            level += 1
+//        }
+//    }
+//    return valleys
+//}
+//
+//print(countingValleys(steps: 8, path: "UDDDUDUU"))
