@@ -549,3 +549,50 @@ import Foundation
 //
 //print(pickingNumbers(a: [4,6,5,3,3,1])) // ->  3
 
+
+//func binarySearch(searchValue: Int, values:[Int]) -> Bool{
+//    let sorteArray = values.sorted()
+//    var leftIndex = 0
+//    var rightIndex = sorteArray.count - 1
+//
+//    while rightIndex >= leftIndex {
+//
+//        let middleIndex = (leftIndex + rightIndex) / 2
+//
+//        let middleValue = sorteArray[middleIndex]
+//
+//        if middleValue == searchValue {
+//            return true
+//        }
+//        if middleValue > searchValue {
+//            rightIndex = middleIndex - 1
+//        }
+//        if middleValue < searchValue {
+//            leftIndex = middleIndex + 1
+//        }
+//    }
+//
+//
+//    return false
+//}
+//
+//print(binarySearch(searchValue: 5, values: [1,2,5,4,3,6,7,8,4,5,6,9,99,88,77,66,55,44,33]))
+
+//func climbingLeaderboard(ranked: [Int], player: [Int]) -> [Int] {
+//    // Write your code here
+//    var resultRank = [Int]()
+//    for element in player {
+//        var ranked = ranked
+//        ranked.append(element)
+//        resultRank.append(rank(for: element, array: ranked))
+//    }
+//    return resultRank
+//}
+//
+//
+//func rank(for number: Int, array: [Int]) -> Int{
+//    let setOfArray = Set(array).sorted(by: >)
+//    return (setOfArray.firstIndex(of: number) ?? 0) + 1
+//}
+//
+//print(climbingLeaderboard(ranked: [100, 90, 90, 80, 75, 60], player: [50, 65, 77, 90, 102]))
