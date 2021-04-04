@@ -617,14 +617,22 @@ import Foundation
 
 //func utopianTree(n: Int) -> Int {
 //    var result = 1
-//    var isSpring = true
-//    
+//    var isSummer = true
+//
 //    guard n > 0 else { return result }
 //    for _ in 1...n {
-//        isSpring ? (result += result) :  (result += 1)
-//        isSpring = !isSpring
+//        isSummer ? (result += result) :  (result += 1)
+//        isSummer = !isSummer
 //    }
 //    return result
 //}
 //
 //print(utopianTree(n: 4))
+
+
+//func angryProfessor(k: Int, a: [Int]) -> String {
+//    let arrivedStudent = a.filter({$0 <= 0 }).count
+//    return arrivedStudent >= k ? "NO" : "YES"
+//}
+//
+//print(angryProfessor(k: 2, a: [0 ,-1, 2, 1]))
