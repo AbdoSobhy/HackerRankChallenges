@@ -613,3 +613,18 @@ import Foundation
 //    if let max = height.max(), max > k { return max - k } else {return 0}
 //}
 //print(hurdleRace(k: 7, height: [2,5,4,5,2]))
+
+
+//func utopianTree(n: Int) -> Int {
+//    var result = 1
+//    var isSpring = true
+//    
+//    guard n > 0 else { return result }
+//    for _ in 1...n {
+//        isSpring ? (result += result) :  (result += 1)
+//        isSpring = !isSpring
+//    }
+//    return result
+//}
+//
+//print(utopianTree(n: 4))
