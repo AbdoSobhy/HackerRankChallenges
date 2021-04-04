@@ -596,3 +596,20 @@ import Foundation
 //}
 //
 //print(climbingLeaderboard(ranked: [100, 90, 90, 80, 75, 60], player: [50, 65, 77, 90, 102]))
+
+
+
+//func task(){
+//    print(1)
+//    DispatchQueue.main.async {
+//        print(2)
+//    }
+//    print(3)
+//}
+//
+//task()
+
+//func hurdleRace(k: Int, height: [Int]) -> Int {
+//    if let max = height.max(), max > k { return max - k } else {return 0}
+//}
+//print(hurdleRace(k: 7, height: [2,5,4,5,2]))
