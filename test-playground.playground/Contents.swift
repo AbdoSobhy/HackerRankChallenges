@@ -636,3 +636,18 @@ import Foundation
 //}
 //
 //print(angryProfessor(k: 2, a: [0 ,-1, 2, 1]))
+
+
+//func beautifulDays(i: Int, j: Int, k: Int) -> Int {
+//    var result = 0
+//    for number in i...j {
+//        let reversedNum: Int = Int(String("\(number)".reversed())) ?? 0
+//        if abs(number - reversedNum) % k == 0 {
+//            result += 1
+//        }
+//    }
+//    
+//    return result
+//}
+//
+//print(beautifulDays(i: 1, j: 2000000, k: 23047885))
