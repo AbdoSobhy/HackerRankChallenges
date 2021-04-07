@@ -651,3 +651,16 @@ import Foundation
 //}
 //
 //print(beautifulDays(i: 1, j: 2000000, k: 23047885))
+
+
+func viralAdvertising(n: Int) -> Int {
+    var result = 0
+    var recepiants = 5
+    for _ in 1...n {
+        result += Int(recepiants / 2)
+        recepiants = Int(recepiants / 2) * 3
+    }
+    return result
+}
+
+print(viralAdvertising(n: 5))
