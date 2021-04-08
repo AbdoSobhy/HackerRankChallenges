@@ -652,15 +652,52 @@ import Foundation
 //
 //print(beautifulDays(i: 1, j: 2000000, k: 23047885))
 
+//
+//func viralAdvertising(n: Int) -> Int {
+//    var result = 0
+//    var recepiants = 5
+//    for _ in 1...n {
+//        result += Int(recepiants / 2)
+//        recepiants = Int(recepiants / 2) * 3
+//    }
+//    return result
+//}
+//
+//print(viralAdvertising(n: 5))
 
-func viralAdvertising(n: Int) -> Int {
-    var result = 0
-    var recepiants = 5
-    for _ in 1...n {
-        result += Int(recepiants / 2)
-        recepiants = Int(recepiants / 2) * 3
-    }
-    return result
-}
+//func saveThePrisoner(n: Int, m: Int, s: Int) -> Int {
+//    var m = m
+//    if m % n != 0 {
+//        return (m - (Int(m / n) * n)) + s - 1
+//    } else {
+//        return s - 1 == 0 ? n : s - 1
+//    }
+//}
 
-print(viralAdvertising(n: 5))
+//print(saveThePrisoner(n: 7, m: 200, s: 3))
+//print(saveThePrisoner(n: 5, m: 2, s: 1))
+
+//func circularArrayRotation(a: [Int], k: Int, queries: [Int]) -> [Int] {
+//    var array = a
+//    var queriesValue: [Int] = []
+//    let arrayCount = array.count
+//    let k = k - ( Int(k / arrayCount) * arrayCount )
+//    if k != 0 {
+//        for _ in 1...k {
+//            let lastElement = array.removeLast()
+//            array.insert(lastElement, at: 0)
+//        }
+//    }
+//    queries.forEach({ queriesValue.append(array[$0])})
+//    return queriesValue
+//}
+
+//func circularArrayRotation(a: [Int], k: Int, queries: [Int]) -> [Int] {
+//    let m = a.count - (k % a.count)
+//    var result:[Int] = []
+//
+//    queries.map{ result.append( a[($0 + m) % a.count ])}
+//    return result
+//}
+//
+//print(circularArrayRotation(a: [3,4,5], k: 66958, queries: [1,2]))
